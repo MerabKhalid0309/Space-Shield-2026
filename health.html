@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew Check-In · Space Shield</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="index.html">🛡️ Space Shield</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Mission Overview</a></li>
+      <li><a href="radiation.html">Radiation Monitor</a></li>
+      <li><a href="health.html" aria-current="page">Crew Check-In</a></li>
+      <li><a href="guidance.html">Guidance &amp; Sources</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <h1>Crew Check-In</h1>
+    <p class="page-intro">Three short steps. Values are typed in by the crew or loaded as sample data. Nothing is measured automatically.</p>
+
+    <p class="label-legend">
+      <strong>Source labels you may see:</strong>
+      <span class="legend-chip">Sample data</span>
+      <span class="legend-chip">Entered by crew</span>
+      <span class="legend-chip">Device-measured (not used in this demo)</span>
+    </p>
+
+    <section class="card" id="checkin-section">
+      <h2>Daily check-in</h2>
+      <div id="checkin-content">
+        <p class="placeholder">Loading check-in…</p>
+      </div>
+    </section>
+
+    <section class="card" id="trends-section">
+      <h2>Trends: changed from your usual</h2>
+      <div id="trends-content">
+        <p class="placeholder">Loading trends…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">Demonstration prototype, not medical advice.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/checkin.js"></script>
+  <script src="js/checkin-wizard.js"></script>
+  <script src="js/trends.js"></script>
+  <script src="js/page-health.js"></script>
+</body>
+</html>

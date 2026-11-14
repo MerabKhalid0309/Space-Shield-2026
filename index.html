@@ -3,12 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Space Shield</title>
+  <title>Mission Overview · Space Shield</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Space Shield</h1>
-  <p>Not medical advice.</p>
-  <script src="js/app.js"></script>
+
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="index.html">🛡️ Space Shield</a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Mission Overview</a></li>
+      <li><a href="radiation.html">Radiation Monitor</a></li>
+      <li><a href="health.html">Crew Check-In</a></li>
+      <li><a href="guidance.html">Guidance &amp; Sources</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">NASA Space Apps Challenge 2026</p>
+        <h1>Space Shield</h1>
+        <p class="hero-sentence">
+          A crew tool for a spacecraft travelling to Mars: view radiation readings and record
+          daily health check-ins, side by side but kept separate.
+        </p>
+
+        <div class="mission-chips">
+          <div class="chip"><span class="fact-label">Mission</span><span id="mission-name">Loading…</span></div>
+          <div class="chip"><span class="fact-label">Mission day</span><span id="mission-day">…</span></div>
+          <div class="chip"><span class="fact-label">Signal delay to Earth</span><span id="signal-delay">…</span></div>
+        </div>
+
+        <div class="button-row">
+          <a class="btn" href="radiation.html">Open Radiation Monitor</a>
+          <a class="btn secondary" href="health.html">Open Crew Check-In</a>
+        </div>
+      </div>
+
+      <!-- The 3D spacecraft will be placed here in a later step -->
+      <div class="spacecraft-stage" id="spacecraft-stage">
+        <p class="stage-label">Interactive 3D spacecraft coming next.<br>
+        It will be an illustrative model, not a live view.</p>
+      </div>
+    </section>
+
+    <!-- TWO SEPARATE SUMMARY PANELS -->
+    <div class="summary-grid">
+
+      <section class="card" id="overview-radiation">
+        <h2>Radiation summary</h2>
+        <div id="radiation-summary">
+          <p class="placeholder">Loading…</p>
+        </div>
+        <a class="btn secondary" href="radiation.html">See full radiation readings</a>
+      </section>
+
+      <section class="card" id="overview-health">
+        <h2>Latest crew check-in</h2>
+        <div id="health-summary">
+          <p class="placeholder">Loading…</p>
+        </div>
+        <a class="btn secondary" href="health.html">See check-ins and trends</a>
+      </section>
+
+    </div>
+
+    <p class="data-note">
+      All values on this site are <strong>sample data</strong> for the demonstration. Nothing is measured live.
+      <a href="guidance.html">Guidance &amp; Sources</a> explains what each item means.
+    </p>
+
+  </main>
+
+  <footer class="page-footer">Demonstration prototype, not medical advice.</footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/radiation.js"></script>
+  <script src="js/checkin.js"></script>
+  <script src="js/page-overview.js"></script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/spacecraft.js"></script>
+
 </body>
 </html>

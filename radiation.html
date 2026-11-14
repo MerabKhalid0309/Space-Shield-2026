@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radiation Monitor · Space Shield</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="index.html">🛡️ Space Shield</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Mission Overview</a></li>
+      <li><a href="radiation.html" aria-current="page">Radiation Monitor</a></li>
+      <li><a href="health.html">Crew Check-In</a></li>
+      <li><a href="guidance.html">Guidance &amp; Sources</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <h1>Radiation Monitor</h1>
+    <p class="page-intro">Radiation telemetry with a time range, summary cards and a readings table. Space-weather events are shown separately as context.</p>
+
+    <section class="card" id="radiation-panel">
+      <h2>Radiation telemetry</h2>
+      <div id="radiation-content">
+        <p class="placeholder">Loading radiation readings…</p>
+      </div>
+    </section>
+
+    <section class="card" id="context-card">
+      <h2>Space-weather context</h2>
+      <div id="context-content">
+        <p class="placeholder">Loading space-weather context…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">Demonstration prototype, not medical advice.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/radiation.js"></script>
+  <script src="js/context.js"></script>
+  <script src="js/page-radiation.js"></script>
+</body>
+</html>

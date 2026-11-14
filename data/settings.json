@@ -2,6 +2,7 @@
   "mission": {
     "name": "Earth to Mars transit",
     "startDate": "2030-05-01",
+    "sampleCurrentDate": "2030-05-14",
     "sampleSignalDelayMinutes": 12,
     "signalDelayNote": "Sample value. Real delay changes with planet positions."
   },
@@ -13,6 +14,14 @@
     "mood": "1 (low) to 5 (high)"
   },
   "baselineDays": 5,
+    "changeAmounts": {
+    "heartRate": 4,
+    "temperature": 0.2,
+    "sleepHours": 0.8,
+    "mood": 1,
+    "label": "Display setting for how big a difference is shown as 'changed from your usual'. Not a medical range. Demo values, to be set by the mission medical team."
+  },
+  
   "radiationLimit": {
     "value": 20000,
     "unit": "µSv",
