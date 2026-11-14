@@ -1,0 +1,16 @@
+[
+  { "timestamp": "2030-05-01T12:00:00Z", "doseRate": 480, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-02T12:00:00Z", "doseRate": 492, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-03T12:00:00Z", "doseRate": 475, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-04T12:00:00Z", "doseRate": 488, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-05T12:00:00Z", "doseRate": 501, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-06T12:00:00Z", "doseRate": 483, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-07T12:00:00Z", "doseRate": 490, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-08T12:00:00Z", "doseRate": 486, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-09T12:00:00Z", "doseRate": 492, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-10T12:00:00Z", "doseRate": 640, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-11T12:00:00Z", "doseRate": 705, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-12T12:00:00Z", "doseRate": 590, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-13T12:00:00Z", "doseRate": 520, "unit": "µSv/day", "source": "Sample data" },
+  { "timestamp": "2030-05-14T12:00:00Z", "doseRate": 495, "unit": "µSv/day", "source": "Sample data" }
+]

@@ -1,0 +1,29 @@
+{
+  "mission": {
+    "name": "Earth to Mars transit",
+    "startDate": "2030-05-01",
+    "sampleSignalDelayMinutes": 12,
+    "signalDelayNote": "Sample value. Real delay changes with planet positions."
+  },
+  "units": {
+    "radiation": "µSv/day",
+    "heartRate": "beats per minute",
+    "temperature": "°C",
+    "sleepHours": "hours",
+    "mood": "1 (low) to 5 (high)"
+  },
+  "baselineDays": 5,
+  "radiationLimit": {
+    "value": 20000,
+    "unit": "µSv",
+    "label": "Demo value, to be set by the mission medical team"
+  },
+  "symptomChecklist": [
+    "Headache",
+    "Tiredness",
+    "Nausea",
+    "Trouble concentrating",
+    "Skin irritation",
+    "Other"
+  ]
+}
